@@ -2,8 +2,7 @@ The demo simply splits by time duration. See https://github.com/alphacep/vosk-ap
 
 In `stt.js`:
 
-`speechToText_stream`: convert audio to the expected format and write to stdout, then vosk reads from stdout. Performs bad :(
+- `speechToText_stream`: convert audio to the expected format and write to stdout, then vosk reads from stdout. Performed bad :(
 
-`speechToText_simple` expects the wav file to be 16bit, mono channel. Working on getting the file converted directly to the expected format in `convertChunksToAudio`.
-
+- `speechToText_simple` expects the wav file to be 16bit, mono channel. Performed a bit better. Was able to parse the last sentence in `000010.wav` when max alternatives is set to 10 (but we cannot pick the closest one without listening to the audio anyway...)
 
