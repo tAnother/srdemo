@@ -1,2 +1,5 @@
-model/*
+model/
+tmp/
+node_modules/
 *.wav
+package-lock.json

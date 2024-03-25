@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import wave
 # import subprocess
 import speech_recognition as sr
 from moviepy.editor import *

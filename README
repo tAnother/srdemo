@@ -1,0 +1,9 @@
+The demo simply splits by time duration. See https://github.com/alphacep/vosk-api/blob/master/nodejs/demo/test_srt.js for splitting based on word (while also getting the start & end time). Vosk lets you config recognizer to output words with times.
+
+In `stt.js`:
+
+`speechToText_stream`: convert audio to the expected format and write to stdout, then vosk reads from stdout. Performs bad :(
+
+`speechToText_simple` expects the wav file to be 16bit, mono channel. Working on getting the file converted directly to the expected format in `convertChunksToAudio`.
+
+
